@@ -1,16 +1,13 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import {getPresentation} from '../utils/functions/getData'
 
+const presentation = await getPresentation()
+
+console.log(presentation)
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1 class=" bg-slate-400 text-pretty ">Hola Mundo</h1>
-	</body>
-</html>
+<BaseLayout>
+	<h1 class="bg-slate-500 font-star text-[#ffffff] font-semibold text-[40px]">{presentation.name}</h1>
+
+</BaseLayout>
