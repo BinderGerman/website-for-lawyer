@@ -18,6 +18,8 @@ jobs:
       - run: |
           pnpm i --frozen-lockfile
           pnpm run build
+      - name: Set Firebase CLI Experiments
+        run: echo "FIREBASE_CLI_EXPERIMENTS=webframeworks" >> $GITHUB_ENV
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
