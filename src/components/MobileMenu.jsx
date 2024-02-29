@@ -17,16 +17,22 @@ export const MobileMenu = () => {
         )}
       </button>
       {isOpen && (
-        <div className="absolute right-0 top-6 bg-[#3F4D39] rounded-md">
-          <ul className="font-choco text-[#F1EDEC] p-4">
+        <div className="w-[300px] absolute right-0 top-10 bg-[#3F4D39] rounded-md">
+          <ul className="font-choco font-extrabold text-xl text-[#F1EDEC]  p-4">
             <li className="p-2 ">
-              <a href="#">Mi Compromiso</a>
+              <a className="smooth-scroll" href="#mi-compromiso">
+                Mi Compromiso
+              </a>
             </li>
             <li className="p-2 ">
-              <a href="#">Servicios</a>
+              <a className="smooth-scroll" href="#servicios">
+                Servicios
+              </a>
             </li>
             <li className="p-2 ">
-              <a href="#">Contacto</a>
+              <a className="smooth-scroll" href="#form">
+                Contacto
+              </a>
             </li>
           </ul>
         </div>

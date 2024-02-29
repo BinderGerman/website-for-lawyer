@@ -17,9 +17,19 @@ export const Form = () => {
   console.log(watch("example"));
 
   return (
-    <section className="w-full flex justify-center mb-10">
+    <section className="w-full flex flex-col items-center mb-10">
+      <h3
+        id="form"
+        className="text-center font-yeseva font-extrabold text-[#3F4D39] text-3xl mb-4"
+      >
+        Contacto
+      </h3>
       <div className="max-w-[350px] flex flex-col bg-[#3F4D39] font-choco p-8 rounded-lg shadow-lg">
-        <form onSubmit={onSubmit}>
+        <form
+          action="https://formsubmit.co/bindergerman@gmail.com"
+          method="POST"
+          /* onSubmit={onSubmit} */
+        >
           <label
             className="text-[#F1EDEC] text-base font-extrabold block mt-4"
             htmlFor="nombre"
@@ -133,6 +143,7 @@ export const Form = () => {
           <textarea
             className="w-full p-2 rounded mb-2"
             name="consulta"
+            type="text"
             placeholder="Escriba su consulta aquí"
             id=""
             cols="30"

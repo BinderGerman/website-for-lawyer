@@ -2,6 +2,7 @@
 import Button from './Button.astro'
 import { MobileMenu } from './MobileMenu'
 ---
+
 <nav class="w-full flex justify-between items-center py-4 px-4 md:p-8">
     <div class="flex gap-4 items-center">
         <img class="" src="/logo_navbar.png" alt="Logo">
@@ -11,13 +12,13 @@ import { MobileMenu } from './MobileMenu'
         <div class="hidden md:block">
             <ul class="flex font-choco font-extrabold text-[#3F4D39] text-xl">
                 <li class="hover:text-[#92A48B] mr-4">
-                  <a href="#">Mi Compromiso</a>
+                  <a href="#mi-compromiso" class="smooth-scroll">Mi Compromiso</a>
                 </li>
                 <li class="hover:text-[#92A48B] mr-4">
-                  <a href="#">Servicios</a>
+                  <a href="#servicios" class="smooth-scroll">Servicios</a>
                 </li>
                 <li class="hover:text-[#92A48B] mr-4">
-                  <a href="#">Contacto</a>
+                  <a href="#form" class="smooth-scroll">Contacto</a>
                 </li>
               </ul> 
         </div>
@@ -25,3 +26,4 @@ import { MobileMenu } from './MobileMenu'
           <MobileMenu client:load/>
     </div>
 </nav>
+

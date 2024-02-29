@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Hero from '../components/Hero.astro'
 import InfoSection from '../components/InfoSection.astro'
+import Footer from '../components/Footer.astro'
 import {Form} from '../components/Form'
 import { getServices, getValues } from '../utils/functions/getData'
 const services = getServices()
@@ -9,8 +10,33 @@ const values = getValues()
 ---
 
 <BaseLayout>
-	<Hero />
-	<InfoSection data={values} name='Mi compromiso' />
-	<InfoSection data={services} name="Servicios"/>
+	<Hero/>
+	<InfoSection data={values} name='Mi compromiso' nameId="mi-compromiso" />
+	<InfoSection data={services} name="Servicios" nameId="servicios" />
 	<Form client:load/>
+	<Footer />
 </BaseLayout>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const links = document.querySelectorAll(".smooth-scroll");
+  
+		links.forEach(function(link) {
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+  
+				const sectionId = this.getAttribute("href");
+				scrollToSection(sectionId.substring(1)); // Eliminar el "#" del inicio
+			});
+		});
+  
+		const scrollToSection = (sectionId) => {
+			const section = document.getElementById(sectionId);
+			if (section) {
+				section.scrollIntoView({
+					behavior: "smooth"
+				});
+			}
+		};
+	});
+  </script>
