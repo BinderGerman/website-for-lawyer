@@ -2,50 +2,64 @@ export const data = {
   presentation: {
     name: "Abogada Daniela Robles",
     description:
-      "Tu tranquilidad es mi prioridad. Desde asuntos familiares hasta disputas comerciales, estoy aquí para proteger tus derechos y luchar por tus intereses con profesionalismo, dedicación y celeridad",
+      "Tu tranquilidad es mi prioridad. Desde asuntos familiares hasta disputas comerciales, estoy aquí para proteger tus derechos y luchar por tus intereses con profesionalismo, dedicación y celeridad.",
   },
   services: [
     {
       name: "Derecho de Familia",
       description:
-        "resuelve tus asuntos familiares con seguridad, desde cuidado personal, régimen de comunicación, cuota alimentaria, atribución del hogar hasta divorcios o disolución de uniones convivenciales y sus respectivas liquidaciones.",
+        "Resuelve tus asuntos familiares con seguridad, desde cuidado personal, régimen de comunicación, cuota alimentaria, atribución del hogar hasta divorcios o disolución de uniones convivenciales y sus respectivas liquidaciones.",
       icon: "/family.svg",
+      thereIsIcon: true,
     },
     {
       name: "Derecho Laboral",
       description:
         "Protejo tus derechos laborales desde conflictos hasta despidos injustificados. Ofrezco asesoramiento legal completo, desde la revisión de liquidaciones hasta la representación en juicios laborales. Estoy aquí para ti.",
       icon: "/job.svg",
+      thereIsIcon: true,
     },
     {
       name: "Sucesiones",
       description:
-        "Ofrezco asistencia completa en procesos sucesorios, desde la declaración de herederos hasta la gestión de bienes, incluyendo ventas, alquileres o transferencias, adaptándome a cada situación específica. Estoy aquí para brindarte el respaldo legal necesario para proteger a tu familia y tus bienes, y para asesorarte en planificación sucesoria.",
+        "Ofrezco apoyo integral en procesos sucesorios, gestionando desde la declaración de herederos hasta la administración de bienes, adaptándome a cada situación. Mi objetivo es brindarte respaldo legal para proteger a tu familia y bienes, además de asesorarte en planificación sucesoria.",
       icon: "/succesion.svg",
+      thereIsIcon: true,
     },
     {
       name: "Violencias",
       description:
         "Con profesionalismo, empatía y confidencialidad, te asesoro en cuestiones derivadas de violencias, logrando el dictado de medidas de protección pertinentes, no solo hacia las personas sino también sobre los bienes.",
-      icon: "",
+      icon: "violence.svg",
+      thereIsIcon: true,
     },
     {
       name: "ART",
       description:
         "Estoy aquí para respaldarte en tu demanda contra la ART tras un accidente laboral. Con mi experiencia, te guiaré hacia la justicia y la compensación que mereces. ¡No estás solo en esto!",
-      icon: "/art",
+      icon: "/art.svg",
+      thereIsIcon: true,
+    },
+    {
+      name: "Accidentes",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      icon: "/accident.svg",
+      thereIsIcon: true,
     },
   ],
   values: [
     {
       name: "Honestiidad, Confianza y Empatía",
       description:
-        "valores principales que tengo en consideración al momento de ejercer una representación legal. Proporciono un asesoramiento legal personalizado y de alta calidad, con un enfoque comprensivo.",
+        "Valores principales que tengo en consideración al momento de ejercer una representación legal. Proporciono un asesoramiento legal personalizado y de alta calidad, con un enfoque comprensivo.",
+      thereIsIcon: false,
     },
     {
       name: "Seguridad Jurídica y Celeridad",
       description:
-        "los casos a resolver son resueltos con certeza y utilizando todos los procedimientos establecidos previamente para garantizar sus derechos, actuando para tal fin con compromiso, comunicación activa, dedicación y celeridad",
+        "Los casos a resolver son resueltos con certeza y utilizando todos los procedimientos establecidos previamente para garantizar sus derechos, actuando para tal fin con compromiso, comunicación activa, dedicación y celeridad",
+      thereIsIcon: false,
     },
   ],
 };

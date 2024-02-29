@@ -1,0 +1,42 @@
+---
+const {icon, name, description, thereIsIcon} = Astro.props
+
+
+---
+
+<aside class="hiddenAnimation max-w-[320px] flex-grow flex flex-col items-center text-center bg-[#F1EDEC] font-choco rounded-lg p-4 shadow-lg">
+  {
+    thereIsIcon ? <img class="mb-4" src={icon} alt="Icon" /> : ''
+  }
+  
+  <h3 class="text-[#3F4D39] font-bold text-xl mb-2">{name}</h3>
+  <p class="text-lg">{description}</p>
+</aside>
+
+<style>
+  .hiddenAnimation {
+    opacity: 0;
+    transform: translateX(-100%) ;
+    transition: all 1.5s;
+  }
+
+  .showAnimation {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('showAnimation')
+      } else {
+        entry.target.classList.remove('showAnimation')
+      }
+    })
+  })
+
+  const hiddenElements = document.querySelectorAll('.hiddenAnimation')
+  hiddenElements.forEach((el) => observer.observe(el))
+</script>

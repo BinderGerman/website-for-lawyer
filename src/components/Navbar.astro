@@ -1,5 +1,27 @@
 ---
+import Button from './Button.astro'
+import { MobileMenu } from './MobileMenu'
 ---
-<nav>
-    
+<nav class="w-full flex justify-between items-center py-4 px-4 md:p-8">
+    <div class="flex gap-4 items-center">
+        <img class="" src="/logo_navbar.png" alt="Logo">
+        <h2 class="hidden font-star text-[#3F4D39] text-xl sm:block">Abogada Daniela Robles</h2>
+    </div>
+    <div class="flex items-center">
+        <div class="hidden md:block">
+            <ul class="flex font-choco font-extrabold text-[#3F4D39] text-xl">
+                <li class="hover:text-[#92A48B] mr-4">
+                  <a href="#">Mi Compromiso</a>
+                </li>
+                <li class="hover:text-[#92A48B] mr-4">
+                  <a href="#">Servicios</a>
+                </li>
+                <li class="hover:text-[#92A48B] mr-4">
+                  <a href="#">Contacto</a>
+                </li>
+              </ul> 
+        </div>
+          <Button />  
+          <MobileMenu client:load/>
+    </div>
 </nav>

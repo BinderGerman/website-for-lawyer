@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #ffffff;
+}
+
 @font-face {
   font-family: "Yeseva";
   src: url("/fonts/yeseva-one-regular.woff") format("woff");

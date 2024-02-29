@@ -1,0 +1,15 @@
+---
+import Navbar from './Navbar.astro'
+import Button from './Button.astro'
+import {getPresentation} from '../utils/functions/getData'
+
+const presentation = await getPresentation()
+---
+<section class="min-h-dvh bg-cover bg-right opacity-95 mb-10 bg-[linear-gradient(to_right_bottom,rgba(241,237,236,0.8),rgba(219,183,171,0.8)),url('/goddess-of-justice.png')]">
+    <Navbar />
+    <div class="w-full flex flex-col items-center p-8 pt-24 text-center text-[#3F4D39] mb-8  md:text-left md:items-start md:p-16 ">
+        <h1 class="font-yeseva font-extrabold text-[32px] mb-4 md:text-[46px]">{presentation.name}</h1>
+        <p class="font-choco font-extrabold text-2xl mb-8 md:w-2/3">{presentation.description}</p>
+        <Button />
+    </div>  
+</section>

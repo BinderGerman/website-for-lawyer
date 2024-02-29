@@ -1,13 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import {getPresentation} from '../utils/functions/getData'
-
-const presentation = await getPresentation()
-
-console.log(presentation)
+import Hero from '../components/Hero.astro'
+import InfoSection from '../components/InfoSection.astro'
+import {Form} from '../components/Form'
+import { getServices, getValues } from '../utils/functions/getData'
+const services = getServices()
+const values = getValues()
 ---
 
 <BaseLayout>
-	<h1 class="bg-slate-500 font-star text-[#ffffff] font-semibold text-[40px]">{presentation.name}</h1>
-
+	<Hero />
+	<InfoSection data={values} name='Mi compromiso' />
+	<InfoSection data={services} name="Servicios"/>
+	<Form client:load/>
 </BaseLayout>
