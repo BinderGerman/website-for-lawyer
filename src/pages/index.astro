@@ -11,9 +11,14 @@ const values = getValues()
 
 <BaseLayout>
 	<Hero/>
-	<InfoSection data={values} name='Mi compromiso' nameId="mi-compromiso" />
-	<InfoSection data={services} name="Servicios" nameId="servicios" />
-	<Form client:load/>
+	<main class="w-full sm:px-16 py-10 md:bg-cover md:bg-right md:opacity-95 md:bg-[url('/image-body.png')]">
+		<InfoSection data={values} name='Mi compromiso' nameId="mi-compromiso" />
+		<InfoSection data={services} name="Servicios" nameId="servicios" />
+		<Form client:load/>
+	</main>
+	<div class="hidden md:block md:fixed md:left-10 md:bottom-10">
+		<a href="https://wa.link/69gey1" target="_blank"><img src="/contact_whatsapp.svg" alt="Whatsapp"></a>
+	</div>
 	<Footer />
 </BaseLayout>
 

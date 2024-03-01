@@ -8,7 +8,7 @@ export const data = {
     {
       name: "Derecho de Familia",
       description:
-        "Resuelve tus asuntos familiares con seguridad, desde cuidado personal, régimen de comunicación, cuota alimentaria, atribución del hogar hasta divorcios o disolución de uniones convivenciales y sus respectivas liquidaciones.",
+        "Resuelvo tus asuntos familiares con seguridad, desde cuidado personal, régimen de comunicación, cuota alimentaria, atribución del hogar hasta divorcios o disolución de uniones convivenciales y sus respectivas liquidaciones.",
       icon: "/family.svg",
       thereIsIcon: true,
     },
@@ -22,7 +22,7 @@ export const data = {
     {
       name: "Sucesiones",
       description:
-        "Ofrezco apoyo integral en procesos sucesorios, gestionando desde la declaración de herederos hasta la administración de bienes, adaptándome a cada situación. Mi objetivo es brindarte respaldo legal para proteger a tu familia y bienes, además de asesorarte en planificación sucesoria.",
+        "Ofrezco apoyo integral en procesos sucesorios, gestionando desde la declaración de herederos hasta la administración de bienes, adaptándome a cada situación. Mi objetivo es brindarte respaldo legal para proteger a tu familia y bienes, además de asesorarte en una planificación sucesoria.",
       icon: "/succesion.svg",
       thereIsIcon: true,
     },
@@ -43,14 +43,14 @@ export const data = {
     {
       name: "Accidentes",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Con la  contención necesaria, resuelvo y gestiono, ante las compañias de seguros, todas las instancias implicadas en el proceso de resolución de un siniestro.",
       icon: "/accident.svg",
       thereIsIcon: true,
     },
   ],
   values: [
     {
-      name: "Honestiidad, Confianza y Empatía",
+      name: "Honestidad, Confianza y Empatía",
       description:
         "Valores principales que tengo en consideración al momento de ejercer una representación legal. Proporciono un asesoramiento legal personalizado y de alta calidad, con un enfoque comprensivo.",
       thereIsIcon: false,
@@ -58,7 +58,7 @@ export const data = {
     {
       name: "Seguridad Jurídica y Celeridad",
       description:
-        "Los casos a resolver son resueltos con certeza y utilizando todos los procedimientos establecidos previamente para garantizar sus derechos, actuando para tal fin con compromiso, comunicación activa, dedicación y celeridad",
+        "Los casos a resolver son resueltos con certeza y utilizando todos los procedimientos establecidos previamente para garantizar sus derechos, actuando para tal fin con compromiso, comunicación activa, dedicación y celeridad.",
       thereIsIcon: false,
     },
   ],
