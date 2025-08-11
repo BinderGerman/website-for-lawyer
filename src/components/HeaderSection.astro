@@ -1,14 +1,15 @@
 ---
-import Button from './Button.astro'
+
 import { MobileMenu } from './MobileMenu'
+import Button from './Button.astro'
 ---
 
-<nav class="w-full flex justify-between items-center py-4 px-4 md:p-8">
-    <div class="flex gap-4 items-center">
+<header class="w-full container mx-auto px-4 md:px-0 flex justify-between items-center py-6">
+    <div class="flex gap-4 items-center ">
         <h2 class="font-star text-[#3F4D39] text-xl font-bold">Abogada <span class=" text-[#d4b5ab]">Daniela Robles</span></h2>
     </div>
     <div class="flex items-center">
-        <div class="hidden md:block">
+        <nav class="hidden md:block">
             <ul class="flex font-choco font-extrabold text-[#3F4D39] text-xl">
                 <li class="hover:text-[#92A48B] mr-4">
                   <a href="#mi-compromiso" class="smooth-scroll">Mi Compromiso</a>
@@ -20,9 +21,13 @@ import { MobileMenu } from './MobileMenu'
                   <a href="#form" class="smooth-scroll">Contacto</a>
                 </li>
               </ul> 
-        </div>
-          <Button />  
-          <MobileMenu client:load/>
+            </nav>
+            <div class="hidden md:flex">
+              <Button />
+            </div>
+            <div class="block md:hidden">
+              <MobileMenu client:load/>
+            </div>
     </div>
-</nav>
+  </header>
 

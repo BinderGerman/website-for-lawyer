@@ -3,8 +3,8 @@ import InfoCard from "./InfoCard.astro"
 const {data, name, nameId} = Astro.props
 ---
 
-<section id={nameId} class="w-full flex flex-col items-center py-4 mb-10">
-  <h3 class="text-center font-yeseva font-extrabold text-[#3F4D39] text-3xl mb-4">{name}</h3>
+<section id={nameId} class="w-full container mx-auto flex flex-col items-center py-4 mb-10">
+  <h3 class="text-center font-yeseva font-extrabold text-[#3F4D39] text-4xl md:text-5xl my-8">{name}</h3>
   <div class="flex flex-col justify-center gap-6 sm:flex-row sm:flex-wrap">
     {
       data.map(card => {

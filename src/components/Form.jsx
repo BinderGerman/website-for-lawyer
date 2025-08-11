@@ -14,14 +14,14 @@ export const Form = () => {
   });
 
   return (
-    <section className="w-full flex flex-col items-center mb-10">
+    <section className="w-full container mx-auto flex flex-col items-center mb-10">
       <h3
         id="form"
-        className="text-center font-yeseva font-extrabold text-[#3F4D39] text-3xl mb-4"
+        className="text-center font-yeseva font-extrabold text-[#3F4D39] text-4xl md:text-5xl mb-8"
       >
         Contacto
       </h3>
-      <div className="w-full flex justify-center lg:justify-end lg:px-28">
+      <div className="w-full flex justify-center lg:justify-end">
         <div className="min-w-[340px] max-w-[350px] bg-[#3F4D39] font-choco p-8 rounded-lg">
           <form
             action="https://formsubmit.co/estudiojuridicoroblesdaniela@gmail.com"
