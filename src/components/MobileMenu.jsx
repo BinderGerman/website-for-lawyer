@@ -50,13 +50,13 @@ export const MobileMenu = () => {
               </a>
             </li>
             <li className="py-4 border-b-2">
-              <a className="smooth-scroll" href="#form" onClick={() => setIsOpen(false)}>
+              <a className="smooth-scroll" href="#contacto" onClick={() => setIsOpen(false)}>
                 Contacto
               </a>
             </li>
             <li className="py-4">
               <div className="flex items-center max-w-36 h-9 bg-[#7e8c79] font-choco text-xl font-semibold text-[#F1EDEC] rounded-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-opacity-80 hover:bg-[#3F4D39]">
-                <a className="smooth-scroll px-6 py-1" href="#form" onClick={() => setIsOpen(false)}>
+                <a className="smooth-scroll px-6 py-1" href="#contacto" onClick={() => setIsOpen(false)}>
                   Hablemos
                 </a>
               </div>
