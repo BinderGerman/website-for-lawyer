@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import HeaderSection from '../components/HeaderSection.astro'
 ---
 
 <html lang="en">
@@ -15,7 +16,7 @@ import '../styles/global.css'
 		<meta name="keywords" content="'Abogado en Trelew' 'Estudio Jurídico en Trelew' 'Asesoramiento legal' Abogada 'Estudio Jurídico' 'Asesoramiento letrado'" />
         <!-- Open Graph -->
 		<meta property="og:title" content="Abogada Daniela Robles">
-		<meta property="og:site_name" content="danielaroblesabogada.com.ar">
+		<meta property="og:site-name" content="danielaroblesabogada.com.ar">
 		<meta property="og:url" content="https://danielaroblesabogada.com.ar">
 		<meta property="og:description" content="Abogada Daniela Robles - Estudio Jurídico - Trelew Chubut">
 		<meta property="og:type" content="website">
@@ -38,6 +39,7 @@ import '../styles/global.css'
 		<link rel="manifest" href="/manifest.json">
 	</head>
 	<body>
+		<HeaderSection />
 		<slot/>
 	</body>
 </html>
