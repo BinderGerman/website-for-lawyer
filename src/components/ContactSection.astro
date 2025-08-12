@@ -1,0 +1,31 @@
+---
+import { Form } from "./Form"
+---
+<section id="contacto" class="w-full container mx-auto flex flex-col items-center py-8 mb-16 px-4">
+  <h3 class="text-center font-yeseva font-extrabold text-[#3F4D39] text-4xl md:text-5xl my-12">Contacto</h3>
+  
+  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+    <!-- Mapa - ocupa 2/3 del espacio -->
+    <div class="w-full order-2 lg:order-1 lg:col-span-2 flex flex-col items-center">
+      <div class="w-full bg-[#3F4D39] p-6 md:p-8 rounded-lg shadow-xl">
+        <h4 class="text-center font-yeseva font-bold text-[#F1EDEC] text-2xl md:text-3xl mb-6">Ubicación</h4>
+        <div class="w-full h-[450px] md:h-[500px] lg:h-[470px] rounded-lg overflow-hidden">
+          <iframe 
+            src="https://www.google.com/maps/d/u/0/embed?mid=1HGb6NMvpOO9hKGKaok3fOvl0y5US624&ehbc=2E312F&noprof=1" 
+            class="w-full h-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p class="text-center text-[#F1EDEC] font-choco text-sm md:text-base mt-4 opacity-90">
+          Don Bosco 109. Trelew, Argentina
+        </p>
+      </div>
+    </div>
+    
+    <!-- Formulario - ocupa 1/3 del espacio -->
+    <div class="w-full order-1 lg:order-2 lg:col-span-1 flex justify-center">
+      <Form />
+    </div>
+  </div>
+</section>
