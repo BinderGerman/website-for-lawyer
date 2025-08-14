@@ -5,10 +5,9 @@ import {getPresentation} from '../utils/functions/getData'
 const presentation = await getPresentation()
 ---
 <header class="min-h-dvh bg-cover bg-local bg-right opacity-95 bg-[linear-gradient(to_right_bottom,rgba(241,237,236,0.8),rgba(219,183,171,0.8)),url('/goddess-of-justice.png')]">
-    <div class="w-full container mx-auto flex flex-col items-center pt-32 text-center text-[#3F4D39] px-8 md:px-0 md:text-left md:items-start">
+    <div class="w-full min-h-dvh container mx-auto flex flex-col items-center justify-center text-center text-[#3F4D39] px-8 md:px-0 md:text-left md:items-start">
         <h1 class="font-yeseva font-extrabold text-[32px] mb-4 md:text-[46px]">{presentation.name}</h1>
         <p class="font-choco font-extrabold text-2xl mb-8 md:w-2/3">{presentation.description}</p>
-        
         <Button />
     </div>  
 </header>
